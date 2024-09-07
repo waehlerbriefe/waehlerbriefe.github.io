@@ -1,0 +1,21 @@
+@mixin button {
+    color: $primary;
+    border-radius: .8rem;
+    font-family: $button-font;
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid $primary;
+    text-transform: uppercase;
+    padding: .6rem 1.2rem;
+    
+    .is-secondary {
+        background-color: $secondary;
+        border: none;
+        padding: 1rem 2rem;
+       
+    }
+}
+

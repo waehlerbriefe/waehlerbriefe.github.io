@@ -1,0 +1,23 @@
+@mixin headine-big {
+    font-size: 4rem;
+    line-height: 4.4rem;
+    letter-spacing: 0.02em;
+}
+
+@mixin headine-small {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.02em;
+}
+
+@mixin text-medium {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.04em;
+}
+
+@mixin text-small {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: 0.02em;
+}

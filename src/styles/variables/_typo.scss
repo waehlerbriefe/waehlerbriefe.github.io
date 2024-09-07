@@ -1,0 +1,5 @@
+$base-font: 'Open Sans';
+$base-fontsize: 1.8rem;
+$base-lineheight: 2.6rem;
+$global-font-size: 62.5%; // root font size calculation trick to make 1rem  = 10px
+$global-font-size-ie: 10px; // root font size fallback for IE
