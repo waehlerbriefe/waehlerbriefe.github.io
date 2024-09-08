@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import '../styles/globals.scss'
 
 export const metadata: Metadata = {
-  title: "Wählerbriefe",
+  title: "waehlerbriefe.de",
   description: "Schreibe deinen Politiker an",
 };
 
@@ -16,7 +16,7 @@ export default function RootLayout({
         <body>
             <header className="header">
                 <div className="container">
-                    <h1 className='site-title'>Wählerbriefe</h1>
+                    <h1 className='site-title'>waehlerbriefe.de</h1>
                 </div>
             </header>
             {children}
