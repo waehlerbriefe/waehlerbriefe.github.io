@@ -23,13 +23,16 @@ export default function RootLayout({
             <footer className="footer">
                 <div className="container">
                     <div className="footer__inner">
-                        <span className="copy">&copy; 2024</span>
+                        <span className="copy">© 2024 waehlerbriefe.de Team</span>
                         <ul className="footer__list">
                             <li className="footer__list-item">
-                                <a className="footer__list-link" href="" title="Datenschutz" target="_blank" rel="noopener noreferrer">Datenschutz</a>
+                                <a className="footer__list-link" href="https://github.com/waehlerbriefe/waehlerbriefe.github.io" title="Bearbeiten auf Github">Bearbeiten auf Github</a>
                             </li>
                             <li className="footer__list-item">
-                                <a className="footer__list-link" href="" title="Impressum" target="_blank" rel="noopener noreferrer">Impressum</a>
+                                <a className="footer__list-link" href="https://dracoblue.net/privacy-policy/" title="Datenschutz" target="_blank" rel="noopener noreferrer">Datenschutz</a>
+                            </li>
+                            <li className="footer__list-item">
+                                <a className="footer__list-link" href="https://dracoblue.net/about/#imprint" title="Impressum" target="_blank" rel="noopener noreferrer">Impressum</a>
                             </li>
                         </ul>
                     </div>
