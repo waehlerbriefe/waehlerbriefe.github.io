@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     font-size: $global-font-size;
+    position: relative;
 }
 
 // fix IE root font size calculation
@@ -49,7 +50,8 @@ body {
 }
 
 .main {
-    padding-bottom: 6rem;
+    padding: 5rem 0 10rem;
+    min-height: 100vh;
 
     .hero {
         padding: 4rem 0;
@@ -67,6 +69,7 @@ body {
 
     .label {
         font-weight: 700;
+        margin-bottom: 1rem;
     }
 
     .select-wrap {
@@ -144,29 +147,39 @@ body {
 
 .footer {
     @include text-small;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     background-color: $dark;
     color: $light;
     width: 100vw;
-    padding: .5rem 0 0;
+    padding: .5rem 0;
 
     &__inner {
-        display: flex;
-        justify-content: space-between;
+        @media screen and (min-width: 900px) {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+        }
     }
 
     &__list {
-        display: flex;
+        @media screen and (min-width: 900px) {
+            display: flex;
+        }
+        padding: 0;
     }
 
     &__list-item {
-        margin-left: 1rem;
+        @media screen and (min-width: 900px) {
+            margin-left: 1rem;
+        }
+        margin-right: 1rem;
     }
 
     &__list-link {
         color: $light;
         text-decoration: none;
+        white-space: nowrap;
     }
 }
