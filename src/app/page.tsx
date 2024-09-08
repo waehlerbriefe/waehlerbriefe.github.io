@@ -73,11 +73,16 @@ ${texts[0].text}
 
   return (
     <main className='main'>
-        <div className='hero'>
+        {!recipient && <div className='hero'>
             <div className='container'>
                 <p>Willkommen bei Wählerbriefe! Bitte wählen Sie den Adressaten und das Thema Ihres Briefes aus. Ein Text wird daraufhin für Sie generiert.</p>
             </div>
-        </div>
+        </div>}
+        {recipient && <div className='hero'>
+            <div className='container'>
+                <p>Wählen Sie nun das Thema Ihres Briefes aus. Ein Text wird daraufhin für Sie generiert.</p>
+            </div>
+        </div>}
         {/* Formular mit zwei Select-Elementen */}
         <div className='container'>
             <form>
